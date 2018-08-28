@@ -1,0 +1,34 @@
+body {
+    background: url("https://res.cloudinary.com/angelrodriguez/image/upload/e_blur:70/v1535419531/woodcurves.jpg");
+    background-size: cover;
+    color: rgb(180, 211, 123);
+    text-shadow: 3px 3px 4px rgb(17, 17, 17);
+    margin: 0 auto;
+    width: 1300px;
+
+}
+
+.row-home img {
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+}
+
+.row-1 img {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+}
+
+.container-form {
+    margin: 20px;
+}
+
+#country {
+    margin: 20px
+}
+
+#subject {
+    width: 400px;
+    height: auto;
+}
