@@ -1,12 +1,14 @@
-require 'mailgun'
-mg_client = Mailgun::Client.new ENV['MAILGUN_API_KEY']
+require 'sendgrid-ruby'
+include SendGrid
 
-# Define your message parameters
-message_params =  { from: 'angelr1076@gmail.com',
-                    to:   'angelr1076@gmail.com',
-                    subject: 'This is a test from NYCDA CLASS',
-                    text:    'This is a working email sent from Bryans'
-                  }
+from = Email.new(email: 'angelr1076@gmail.com')
+to = Email.new(email: 'angelr1076@gmail.com')
+subject = 'NYCDA test email'
+content = Content.new(type: 'text/plain', value: 'this is a test email from nycda class.')
+mail = Mail.new(from, subject, to, content)
 
-# Send your message through the client
-mg_client.send_message 'sandbox5de09cdea4b04c9a9afc1228544224f0.mailgun.org', message_params
+sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+response = sg.client.mail._('send').post(request_body: mail.to_json)
+puts response.status_code
+puts response.body
+puts response.headers

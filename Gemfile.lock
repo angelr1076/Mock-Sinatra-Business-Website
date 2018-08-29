@@ -14,31 +14,21 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     concurrent-ruby (1.0.5)
-    domain_name (0.5.20180417)
-      unf (>= 0.0.5, < 1.0.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    http-cookie (1.0.3)
-      domain_name (~> 0.5)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
-    mailgun-ruby (1.1.10)
-      rest-client (~> 2.0)
-    mime-types (3.2.2)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2018.0812)
     minitest (5.11.3)
     mustermann (1.0.3)
-    netrc (0.11.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
     rainbow (3.0.0)
-    rest-client (2.0.2)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
+    ruby_http_client (3.3.0)
+    sendgrid-ruby (5.2.0)
+      ruby_http_client (~> 3.2)
+      sinatra (>= 1.4.7, < 3)
     sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -49,9 +39,6 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unf (0.1.4)
-      unf_ext
-    unf_ext (0.0.7.5)
 
 PLATFORMS
   ruby
@@ -59,8 +46,8 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   haml
-  mailgun-ruby
   rainbow
+  sendgrid-ruby
   sinatra
 
 RUBY VERSION
