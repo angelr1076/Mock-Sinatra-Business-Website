@@ -1,23 +1,48 @@
-<h1>Contact us...</h1>
+<div id="contact-div">
 
-<div class="container-form">
-  <form method="POST" action="/message">
+<h1>Please contact us and we will get back to you as soon as possible...</h1>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..."><br>
+  <div class="container-form">
+    <form method="POST" action="/message">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..."><br>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="First name..."><br>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Last name..."><br>
+
+      <label for="email">Email Add.</label>
+      <input type="text" id="email" name="email" placeholder="Email address..."><br>
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
       <option value="usa">USA</option>
       <option value="international">international</option>
-    </select><br>
+      </select>
+      <br>
 
-    <label for="subject">Message</label>
-    <textarea id="subject" name="subject" placeholder="Enter message here..." style="height:200px"></textarea><br>
-    <input type="submit" value="Submit">
+      <label for="subject"></label>
+      <p>Enter your message here</p>
+          <div id="message">
+          250 characters remaining
+          </div>
+          <textarea id="subject" onkeydown="keyDown()" name="subject" placeholder="Enter message here..." style="height:200px"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
 
-  </form>
+    <script>
+      var characterCount = document.querySelector("#message");
+      var textBox = document.querySelector("#subject");
+
+      function keyDown(e) {
+        var length = textBox.value.length;
+        characterCount.innerText = (250 - length) + " characters remaining";
+
+        if (length >= 250) {
+          event.preventDefault();
+          characterCount.innerText = " Maximum characters reached!";
+        }
+      }
+    </script>
+  </div>
 </div>

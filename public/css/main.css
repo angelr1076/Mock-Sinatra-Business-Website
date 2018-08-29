@@ -1,11 +1,47 @@
 body {
-    background: url("https://res.cloudinary.com/angelrodriguez/image/upload/e_blur:70/v1535419531/woodcurves.jpg");
+    background: url("https://res.cloudinary.com/angelrodriguez/image/upload/e_art:incognito/v1535543432/white.png");
     background-size: cover;
-    color: rgb(180, 211, 123);
-    text-shadow: 3px 3px 4px rgb(17, 17, 17);
+    color:#b16c06;
+    text-shadow: 1px 1px #160d0d;
+    letter-spacing: 2px;
     margin: 0 auto;
     width: 1300px;
+}
 
+.logo {
+    display: block;
+    float: right;
+}
+
+#home-center {
+    text-align: center;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.carousel-inner {
+    width: 900px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.nav-link {
+    color: #898f38;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.nav-item:hover {
+    background: #d1e29a;
+    border-radius: 5px;
 }
 
 #welcome, #gloss {
@@ -16,7 +52,7 @@ body {
     width: 400px;
     height: 400px;
     padding: 20px;
-    opacity: 0.7;
+    opacity: 0.9;
     border-radius: 50%;
 }
 
@@ -24,7 +60,13 @@ body {
     width: 400px;
     height: 400px;
     padding: 10px;
-    border-radius: 5%;
+}
+
+.about {
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    opacity: 0.9;
 }
 
 .container-form {
@@ -38,4 +80,27 @@ body {
 #subject {
     width: 400px;
     height: auto;
+}
+
+#footer {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#icons-div {
+    display: block;
+    float: right;
+    margin: 10px;
+}
+
+#icons-fa, #icons-tw {
+    color: rgb(73, 73, 131);
+    letter-spacing: 30px;
+    margin-left: 10px;
+}
+
+#icons-in, #icons-pi {
+    color: rgb(161, 35, 46);
+    letter-spacing: 30px;
+    margin-left: 10px;
 }
