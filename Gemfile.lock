@@ -19,6 +19,7 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
+    heroku (3.99.3)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
@@ -52,6 +53,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   haml
+  heroku
   rainbow
   sendgrid-ruby
   sinatra
