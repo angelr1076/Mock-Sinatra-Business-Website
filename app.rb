@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sendgrid-ruby'
+require 'thin'
 include SendGrid
 
 get '/' do

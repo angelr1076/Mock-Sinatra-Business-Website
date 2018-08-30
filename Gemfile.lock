@@ -14,6 +14,8 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     concurrent-ruby (1.0.5)
+    daemons (1.2.6)
+    eventmachine (1.2.7)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -35,6 +37,10 @@ GEM
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
     temple (0.8.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
     thread_safe (0.3.6)
     tilt (2.0.8)
     tzinfo (1.2.5)
@@ -49,6 +55,7 @@ DEPENDENCIES
   rainbow
   sendgrid-ruby
   sinatra
+  thin
 
 RUBY VERSION
    ruby 2.3.7p456
