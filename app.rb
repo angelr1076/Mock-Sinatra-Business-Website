@@ -26,6 +26,7 @@ post '/contact' do
     @to = params[:to]
     @subject = params[:subject]
     @message = params[:message]
+    @country = params[:country]
 
     from = Email.new(email: 'angelr1076@gmail.com')
     to = Email.new(email: 'angelr1076@gmail.com')
