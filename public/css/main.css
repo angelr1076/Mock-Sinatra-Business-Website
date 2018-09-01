@@ -77,7 +77,7 @@ hr {
     margin: 20px
 }
 
-#subject {
+#message {
     width: 400px;
     height: auto;
 }
@@ -103,4 +103,13 @@ hr {
     color: rgb(161, 35, 46);
     letter-spacing: 30px;
     margin-left: 10px;
+}
+
+#fname, #lname {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.from, .country, .subject, .message {
+    color: rgb(199, 23, 23);
 }

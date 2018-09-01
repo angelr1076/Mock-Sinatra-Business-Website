@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'sendgrid-ruby'
-require 'thin'
 include SendGrid
 
 get '/' do
@@ -23,8 +22,8 @@ end
 
 post '/contact' do
     puts params.inspect
-    @from = params[:from]
-    @to = params[:to]
+    @fname = params[:fname]
+    @lname = params[:lname]
     @subject = params[:subject]
     @message = params[:message]
     @country = params[:country]
