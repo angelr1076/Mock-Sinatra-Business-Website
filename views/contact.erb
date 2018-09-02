@@ -22,7 +22,7 @@
       <input type="text" id="subject" name="subject" placeholder="subject"><br>
 
       <label for="message">Enter message below</label>
-          <div id="message">
+          <div id="subject-2">
           250 characters remaining
           </div>
           <textarea id="message" onkeydown="keyDown()" name="message" placeholder="Enter message here..." style="height:200px"></textarea><br>
@@ -30,8 +30,8 @@
     </form>
 
     <script>
-      var characterCount = document.querySelector("#message");
-      var textBox = document.querySelector("#subject");
+      var characterCount = document.querySelector("#subject-2");
+      var textBox = document.querySelector("#message");
 
       function keyDown(e) {
         var length = textBox.value.length;
