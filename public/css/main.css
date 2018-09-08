@@ -105,9 +105,16 @@ hr {
     margin-left: 10px;
 }
 
-#fname, #lname {
-    margin-top: 10px;
-    margin-bottom: 10px;
+#fname {
+    margin-left: 17px;
+}
+
+#lname {
+    margin-left: 20px;
+}
+
+#subject {
+    margin-left: 42px;
 }
 
 .from, .country, .subject, .message {
