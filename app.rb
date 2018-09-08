@@ -2,6 +2,8 @@ require 'sinatra'
 require 'sendgrid-ruby'
 include SendGrid
 
+configure(:development){set :database, "sqlite3:nycda_micro_blog_new.sqlite3"}
+
 get '/' do
     erb :home, layout: :layout
 end
