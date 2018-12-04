@@ -19,7 +19,6 @@ end
 
 get '/contact' do
     puts params.inspect
-    
     erb :contact
 end
 
